@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_face3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.timmy.sockettest.registerFace3">
+
+    <LinearLayout
+        android:background="#2679ca"
+        android:id="@+id/registerBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <TextView
+            android:text="注册人脸"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--@android:color/holo_blue_bright-->
+    </LinearLayout>
+    <Button
+        android:text="getImage"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/take_photo3"
+        android:id="@+id/btn_getImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <Button
+        android:id="@+id/take_photo3"
+        android:text="camera"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/btn_register3"
+        android:text="提交"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <ImageView
+        android:src="@drawable/t4"
+        android:id="@+id/image_pic3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_getImage3"
+
+        />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/tip3"
+        android:layout_alignParentBottom="true"
+        android:text="右侧照"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/btn_getImage3"
+        />
+</RelativeLayout>

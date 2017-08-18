@@ -140,8 +140,11 @@ public class register extends Activity implements View.OnClickListener {
     }
 
     private void direct() {
-        Intent intent=new Intent(this,registerSuccess.class);
+        Intent intent=new Intent(this,registerFace.class);
+        intent.putExtra("id",id.getText()+"");
+        intent.putExtra("username",username.getText()+"");
         startActivity(intent);
+
         finish();
     }
 

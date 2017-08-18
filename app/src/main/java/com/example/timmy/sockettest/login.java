@@ -76,6 +76,8 @@ public class login extends Activity  implements View.OnClickListener{
     private void direct() {
         Intent intent=new Intent(this,register.class);
         startActivity(intent);
+
+
         finish();
     }
 
